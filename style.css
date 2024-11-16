@@ -1,0 +1,127 @@
+/* Reset margins and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?office,work');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+input[type="number"], input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button.clear-btn {
+    background-color: #e74c3c; /* Red color for the 'Clear All Expenses' button */
+}
+
+button.clear-btn:hover {
+    background-color: #c0392b; /* Darker red when hovered */
+}
+
+/* Icon Buttons */
+button i {
+    margin-right: 8px;
+}
+
+/* Expense List Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+li:nth-child(even) {
+    background-color: #dfe6e9;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
